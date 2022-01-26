@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('reportenetflix.csv')
+df = pd.read_csv('viewingactivitysample.csv')
 df = df.drop(['Profile Name', 'Attributes', 'Supplemental Video Type', 'Device Type', 'Bookmark', 'Latest Bookmark', 'Country'], axis=1)
 df['Start Time'] = pd.to_datetime(df['Start Time'], utc=True)
 df.dtypes
